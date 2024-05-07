@@ -5,6 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'dimgray': "#625858",
+            'portland-orange': "#FE5B3E",
+            'mango-orange': "#FE7B49",
+            'gainsboro': '#ded7d7',
+            'silver': '#c4c4c4',
+            'light-salmon': '#ffa898',
+            'slategray': '#5a7184',
+          },
+          fontFamily: {
+            'poppins': ['poppins', 'sans-serif'],
+            'dm-sans': ['dm-sans', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
   <title>Tripp</title>
 </head>
 
@@ -33,13 +60,156 @@
   <!-- P'Pipo -->
 
   <!-- Train -->
-  <section>
-    <!-- Train -->
+  <section class="w-full h-[888px] flex items-center relative">
+    <div class="w-[1700px] h-[535px] flex justify-between absolute left-[-110px] items-center">
+      <!-- Card Slides Start -->
+      <div class="flex items-center gap-[20px]">
+        <!-- Card Left Start-->
+        <div
+          class="w-[332px] h-[450px] bg-gradient-to-b from-gainsboro to-silver rounded-[20px] p-[20px] flex justify-center items-end">
+          <div class="w-[272px] h-[60px] flex items-center justify-between">
+            <p class="font-poppins font-semibold text-[20px] text-white">Great Wall of China<br /><span
+                class="font-dm-sans font-medium text-[18px]">Beijing, China</span></p>
+            <div class="w-[57px] h-[28px] flex items-center justify-between text-white">
+              <p class="font-poppins text-[18px] font-semibold">4.8</p>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                <path fill-rule="evenodd"
+                  d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- Card Left End-->
+
+        <!--Card Center Start-->
+        <div class="flex  flex-col items-center justify-between">
+          <div
+            class="w-[332px] h-[450px] bg-gradient-to-b from-gainsboro to-silver rounded-[20px] p-[20px] flex justify-center items-end">
+            <div class="w-[272px] h-[60px] flex items-center justify-between">
+              <p class="font-poppins font-semibold text-[20px] text-white">Lake Powell<br /><span
+                  class="font-dm-sans font-medium text-[18px]">U.S.A</span></p>
+              <div class="w-[57px] h-[28px] flex items-center justify-between text-white">
+                <p class="font-poppins text-[18px] font-semibold">4.8</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                  <path fill-rule="evenodd"
+                    d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"
+                    clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="w-[110px] h-[48px] mt-[35px] flex items-center justify-between">
+            <!-- Button L start -->
+            <button class="w-[32px] h-[32px] text-light-salmon ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-[32px] h-[32px]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+              </svg>
+            </button>
+            <!-- Button L end -->
+            <!-- Button R start -->
+            <button class="w-[48px] h-[48px] text-portland-orange">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-[48px] h-[48px]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </button>
+            <!-- Button R end -->
+          </div>
+        </div>
+        <!-- Card Center End-->
+
+        <!--Card Right Start-->
+        <div
+          class="w-[332px] h-[450px] bg-gradient-to-b from-gainsboro to-silver rounded-[20px] p-[20px] flex justify-center items-end">
+          <div class="w-[272px] h-[60px] flex items-center justify-between">
+            <p class="font-poppins font-semibold text-[20px] text-white">Deep Creek Lake<br /><span
+                class="font-dm-sans font-medium text-[18px]">Maryland</span></p>
+            <div class="w-[57px] h-[28px] flex items-center justify-between text-white">
+              <p class="font-poppins text-[18px] font-semibold">4.8</p>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                <path fill-rule="evenodd"
+                  d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- Card Right End-->
+      </div>
+      <!-- Card Slides End-->
+
+      <!-- Description Start-->
+      <div class="w-[574px] h-[406px] flex flex-col justify-between">
+        <p class="font-poppins font-bold text-[48px]">Most Popular Destination of Us!</p>
+        <p class="font-dm-sans text-dimgray text-[18px] leading-10">Credibly unleash economically sound
+          e-business
+          with<br />
+          bleeding-edge
+          users.
+          Uniquely simplify
+          mission-critical
+          benefits with cross-unit manufactured products. Energistically re-engineer </p>
+        <button
+          class="flex items-center justify-center w-[180px] h-[70px] bg-gradient-to-b from-portland-orange to-mango-orange rounded-xl">
+          <div class="flex items-center justify-between w-[100px] h-[24px] text-white">
+            <p class="font-dm-sans text-[16px] font-bold">View All</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+            </svg>
+          </div>
+        </button>
+      </div>
+      <!-- Description End-->
+    </div>
   </section>
   <!-- Train -->
+
   <!-- Train -->
-  <section>
-    <!-- Train -->
+  <section class="w-full h-[987px] flex items-center justify-center">
+    <div class="w-[1417px] h-[736px] flex justify-between items-end">
+      <!-- Circle Start -->
+      <div class="w-[632px] h-[736px] flex justify-center items-end">
+        <div class="w-[632px] h-[632px] rounded-full border-[#a8a8a8] border-[0.94px] brightness-105 contrast-200">
+          <img src="images/train-sec6.png" alt="" class="absolute right-7 bottom-5">
+        </div>
+      </div>
+      <!-- Circle End -->
+
+      <!-- Description Start -->
+      <div class="w-[571px] h-[513px] flex flex-col justify-between mb-[80px]">
+        <p class="font-poppins font-bold text-[48px]">Feedback from<br /> Our Customers</p>
+        <p class="font-poppins font-semibold text-[24px] leading-10">“I’ve Went ot America from Tripp Play about 1 years
+          ago. Tripp
+          make the prototyping process so easy and
+          faster. I feel this is the best apps for Prototyping use”</p>
+        <p class="font-dm-sans font-medium text-[18px] text-slategray">— Ferdous - CEO of Coco</p>
+        <div class="w-[112px] h-[48px] flex justify-between">
+          <!-- Button L Start -->
+          <button class="w-[48px] h-[48px] flex items-center justify-center text-portland-orange">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[48px] h-[48px]">
+              <path fill-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <!-- Button L End -->
+
+          <!-- Button R Start -->
+          <button class="w-[48px] h-[48px] flex items-center justify-center text-light-salmon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[48px] h-[48px]">
+              <path fill-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <!-- Button R End-->
+        </div>
+      </div>
+      <!-- Description End -->
+    </div>
   </section>
   <!-- Train -->
 
