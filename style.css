@@ -1,3 +1,67 @@
+
+/* ============================================================ */
+/* Vacation */
+/* ============================================================ */
+.vacation {
+  gap: 30px;
+  font-family: "Poppins", sans-serif;
+  padding: 40px;
+  padding-left: 220px;
+  padding-right: 220px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 272px;
+  width: 332.5px;
+  border: 1px solid hsla(0, 9%, 94%, 1);
+  border-radius: 20px;
+  gap: 20px;
+}
+
+.box:hover {
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.icon-vacation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(254, 91, 62, 0.1);
+  height: 80px;
+  width: 80px;
+  border-radius: 20px;
+}
+
+/* ============================================================ */
+/* Package */
+/* ============================================================ */
+.package {
+  font-family: "Poppins", sans-serif;
+}
+
+.package-pic {
+  background-color: hsla(0, 0%, 77%, 1);
+  display: flex;
+  justify-content: end;
+  width: 453px;
+  height: 520px;
+  /* width: 355px;
+  height: 407px; */
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.price {
+  color: white;
+  height: 30px;
+  width: 40px;
+}
+/* ============================================================ */
+
 .contain-1 {
   padding: 0;
   margin: 0;
@@ -232,3 +296,4 @@ button {
   height: 820px;
   z-index: -1;
 }
+
