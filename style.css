@@ -1,4 +1,3 @@
-
 /* ============================================================ */
 /* Vacation */
 /* ============================================================ */
@@ -62,6 +61,152 @@
 }
 /* ============================================================ */
 
+@media only screen and (max-width: 375px) {
+  .contain-section-1 {
+    width: 375px;
+    display: flex;
+  }
+
+  div .top-head {
+    width: 375px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 150px; */
+  }
+
+  .box-flex {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .box-fuel {
+    order: 1;
+  }
+
+  .box-flex .top {
+    font-size: 30px;
+  }
+
+  .box-flex .under {
+    font-size: 24px;
+  }
+
+  .box-flex .background {
+    height: 1050px;
+  }
+
+  .top-head .head-2,
+  .head-3 {
+    display: none;
+  }
+
+  .top-head .head-4 {
+    /* visibility: visible; */
+    display: block;
+  }
+
+  .box-fuel {
+    margin: 10px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div .container-selector {
+    width: 375px;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    padding-right: 0px;
+  }
+
+  div .box-selector {
+    width: 327px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .selector {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-1 {
+    text-align: center;
+  }
+
+  .selector hr {
+    height: 0px;
+    width: 50px;
+  }
+
+  .box-circle .image-circle {
+    width: 283px;
+    height: 275px;
+  }
+
+  .box-circle .box-square {
+    padding: 6px;
+    width: 76px;
+    height: 86px;
+    position: absolute;
+    top: 95px;
+    left: -30px;
+  }
+
+  div .square {
+    width: 64px;
+    height: 38px;
+  }
+
+  div .mountain {
+    font-size: 5px;
+    margin: 4px;
+  }
+
+  div .circle {
+    width: 18px;
+    height: 18px;
+  }
+
+  .circle-main .circle {
+    margin-left: 2px;
+  }
+
+  .circle-main {
+    position: relative;
+  }
+
+  .circle-main .circle-2 {
+    position: absolute;
+    left: 14px;
+  }
+
+  .circle-main .circle-3 {
+    position: absolute;
+    left: 28px;
+  }
+
+  .circle-main .circle-4 {
+    position: absolute;
+    left: 42px;
+  }
+
+  .explore {
+    width: 180px;
+    height: 70px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
+
 .contain-1 {
   padding: 0;
   margin: 0;
@@ -72,25 +217,26 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 250px;
 }
 
 .top-head {
   padding: 25px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
 .head-1 {
   font-size: 48px;
+  font-weight: 700;
+  font-family: "Baloo Bhai 2", sans-serif;
   position: relative;
 }
 
 .point {
   color: #fe7b49;
   position: absolute;
-  left: 97px;
+  left: 110px;
 }
 
 .head-2 {
@@ -134,18 +280,34 @@
   background-image: linear-gradient(0deg, #fe5b3e, #fe7b49);
 }
 
+.head-4 {
+  width: 24px;
+  height: 24px;
+  /* visibility: hidden; */
+  display: none;
+}
+
+.hide {
+  background-color: white;
+  border: 3px solid white;
+}
+
+.box-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .box-fuel {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 250px;
-  left: 200px;
 }
 
 .top {
   color: #221314;
   font-size: 90px;
   font-weight: 400;
+  font-family: "Paytone One", sans-serif;
 }
 
 .under {
@@ -155,18 +317,12 @@
 }
 
 .box-circle {
-  width: 650px;
-  height: 575px;
   position: relative;
-  top: 70px;
-  left: 700px;
 }
 
 .image-circle {
   width: 500px;
   height: 500px;
-  position: absolute;
-  left: 100px;
 }
 
 .box-square {
@@ -177,6 +333,7 @@
   background-color: #ffffff;
   position: absolute;
   top: 150px;
+  left: -100px;
 }
 
 .square {
@@ -235,18 +392,23 @@
   left: 75px;
 }
 
+.container-selector {
+  width: 100vw;
+  border-radius: 20px;
+  margin-top: 85px;
+  padding-right: 250px;
+  display: flex;
+  justify-content: end;
+}
+
 .box-selector {
   width: 1000px;
   height: 140px;
-  border: 1px solid #2213140d;
   border-radius: 20px;
   background-color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
-  left: 280px;
-  top: 750px;
 }
 
 .selector {
@@ -287,13 +449,17 @@ button {
   background-image: linear-gradient(180deg, #fe5b3e, #fe7b49);
 }
 
+button:hover {
+  background-image: linear-gradient(180deg, #ff4929, #ff6f36ef);
+}
+
 .explore .fas {
   color: white;
 }
 
 .background {
   position: absolute;
+  width: 100vw;
   height: 820px;
   z-index: -1;
 }
-
