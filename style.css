@@ -439,7 +439,7 @@ hr {
   color: #ff8345;
 }
 
-button {
+.explore {
   width: 180px;
   height: 70px;
   border-radius: 15px;
