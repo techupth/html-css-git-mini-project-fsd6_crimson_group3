@@ -62,8 +62,10 @@
 /* ============================================================ */
 @media only screen and (max-width: 1200px) {
   .contain-section-1 {
-    width: 375px;
+    width: 100vw;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   div .top-head {
